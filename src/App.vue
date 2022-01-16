@@ -13,9 +13,9 @@ export default {
     NavigationBar,
     Footer
   },
-    mounted(){
-      this.$store.commit('updateCartFromLocalStorage')
-    }
+  mounted() {
+    this.$store.commit('updateCartFromLocalStorage')
+  }
 
 }
 </script>

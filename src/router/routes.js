@@ -8,8 +8,6 @@ import Contact from '../views/Contact.vue'
 import Cart from '../views/Cart.vue'
 import NotFound from '../views/NotFound.vue'
 
-
-
 import { createRouter, createWebHistory } from 'vue-router'
 const routes = [
 

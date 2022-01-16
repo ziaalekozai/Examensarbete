@@ -1,11 +1,14 @@
 <template>
     <div class="container">
         <div class="Text">
-            <h1>Find occasion wear. Ready to wear brand   </h1>
-            <h1><router-link to="/boys">Shop now</router-link></h1>
-            <h3><br>
-            <router-link to="/signup">Sign up</router-link>  
-            to get free shipping and 15% off all clothes </h3>
+            <h1>Find occasion wear. Ready to wear brand</h1>
+            <h1>
+                <router-link to="/boys">Shop now</router-link>
+            </h1>
+            <h3>
+                <br />
+                <router-link to="/signup">Sign up</router-link>to get free shipping and 15% off all clothes
+            </h3>
         </div>
     </div>
 </template>
@@ -27,11 +30,10 @@ export default {
     box-sizing: border-box;
     color: #fff;
 }
-.Text a{
+.Text a {
     color: #fff;
     text-decoration: none;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
 }
 .Text {
     height: 100%;

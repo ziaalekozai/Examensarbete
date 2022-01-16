@@ -37,8 +37,7 @@ export default {
     display: grid;
     line-height: 3;
     padding-bottom: 0px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 .wrapper-about h1 {
     color: black;

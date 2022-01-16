@@ -25,7 +25,7 @@
 
     <h4>
       Are you a corporate customer or do you want to apply to become a customer?
-      <br />Visit Benyamin & Younes's customer portal or contact the 
+      <br />Visit Benyamin & Younes's customer portal or contact the
       B&Y Customer Center by phone 070-*** ** 50.
     </h4>
   </div>
@@ -53,14 +53,13 @@ export default {
 }
 .wrapper h4 {
   font-size: 25px;
-  width:75%;
-   justify-self: center;
-    text-align: center;
+  width: 75%;
+  justify-self: center;
+  text-align: center;
 }
 .under_rubrik,
 .under_rubrik1 {
   font-size: 35px;
   padding-bottom: 0%;
 }
-
 </style>

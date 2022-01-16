@@ -3,7 +3,7 @@
         <h2>The page could not be found..</h2>
         <p>
             Try another url ..
-            <router-link to="/" class="error">Click here</router-link> to go to the Home page.
+            <router-link to="/" class="error">Click here</router-link>to go to the Home page.
         </p>
     </div>
 </template>

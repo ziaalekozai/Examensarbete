@@ -1,6 +1,6 @@
 <template>
     <div class="register">
-    <h1>Sign Up</h1>
+        <h1>Sign Up</h1>
         <input type="text" v-model="name" placeholder="Enter Name" />
         <input type="text" v-model="lastname" placeholder="Enter Lastname" />
         <input type="email" v-model="email" placeholder="Enter Email" />
@@ -21,8 +21,8 @@ export default {
         }
     },
     methods: {
-        async signUp() {  
-         
+        async signUp() {
+
             let result = await axios.post("http://localhost:3000/users", {
                 name: this.name,
                 lastname: this.lastname,
@@ -30,7 +30,7 @@ export default {
                 password: this.password
             });
             //kolla efter 200
-           if(result.status == 201) {
+            if (result.status == 201) {
                 localStorage.setItem("user-info", JSON.stringify(result.data)) //JSON.stringify använder vi att convertera till string
                 this.$router.push({ name: "Home" })
                 alert('Welcome to our website!')
@@ -48,9 +48,9 @@ export default {
 }
 </script>
 <style>
-.register{
+.register {
     padding: 10px;
-    padding-bottom:10%;
+    padding-bottom: 10%;
 }
 .register input {
     width: 300px;

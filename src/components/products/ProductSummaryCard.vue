@@ -1,22 +1,21 @@
 <template>
     <div class="wrapper-Boys">
         <div class="card">
-            <img 
-            :src= product.url />
-            <h1>{{product.name}}</h1>
-            <p class="price">Price: ${{product.price.toFixed(2)}}</p>
-            <p class="description">{{description}}</p>
-            <button class="view-product-button" @click="$emit('view-product', product)" >View product</button>
+            <img :src="product.url" />
+            <h1>{{ product.name }}</h1>
+            <p class="price">Price: ${{ product.price.toFixed(2) }}</p>
+            <p class="description">{{ description }}</p>
+            <button class="view-product-button" @click="$emit('view-product', product)">View product</button>
         </div>
     </div>
 </template>
 <script>
 export default {
     props: ['product'],
-    description (){
+    description() {
         return this.product.description.substring(0, 150)
     }
-     
+
 }
 </script>
 
@@ -47,29 +46,27 @@ export default {
     color: grey;
     font-size: 22px;
 }
-.description{
+.description {
     padding-bottom: 15px;
 }
-.view-product-button{
-     width: 220px;
+.view-product-button {
+    width: 220px;
     border: none;
     padding: 10px;
     border-radius: 5px;
     margin: 0 5px 50px 5px;
     cursor: pointer;
-    background-color: rgb(79,160,187);
+    background-color: rgb(79, 160, 187);
     color: white;
     font-weight: bold;
-
 }
 .card button:hover {
     opacity: 0.7;
 }
 @media (min-width: 500px) {
-    .card{
-        width:350px;
-        margin:10px;
+    .card {
+        width: 350px;
+        margin: 10px;
     }
-    
 }
 </style>

@@ -4,7 +4,7 @@
         <div class="title">
             <h4>Your cart is empty</h4>
             <h5>
-                <router-link to="/" class="error">Click here</router-link> to go to the Home page.
+                <router-link to="/" class="error">Click here</router-link>to go to the Home page.
             </h5>
         </div>
     </div>

@@ -22,7 +22,7 @@ export default {
             email: '',
             password: '',
             error: [],
-                    
+
         }
     },
     methods: {
@@ -62,7 +62,7 @@ export default {
 };
 </script>
 <style>
-.login{
+.login {
     padding: 20px;
     padding-bottom: 20%;
 }

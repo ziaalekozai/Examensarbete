@@ -1,7 +1,7 @@
 <template>
-    <div class="drawer-background" :class="{show: active}" @click="$emit('close-product-drawer')" />
+    <div class="drawer-background" :class="{ show: active }" @click="$emit('close-product-drawer')" />
 
-    <div class="drawer" :class="{show: active}">
+    <div class="drawer" :class="{ show: active }">
         <div class="drawer-close" @click="$emit('close-product-drawer')">x</div>
 
         <div v-if="product" class="product-details">
@@ -25,10 +25,10 @@
 export default {
     props: ['product', 'active'],
     methods: {
-        addToCart(){
+        addToCart() {
             this.$store.commit('addToCart', this.product)
         },
-        removeFromCart(){
+        removeFromCart() {
             this.$store.commit('removeFromCart', this.product)
         }
     },
@@ -107,9 +107,8 @@ export default {
     font-weight: bold;
 }
 @media (min-width: 500px) {
-    .drawer{
-        width:450px;
+    .drawer {
+        width: 450px;
     }
-    
 }
 </style>

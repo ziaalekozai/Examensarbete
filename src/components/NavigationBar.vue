@@ -109,5 +109,4 @@ export default {
     border-radius: 50%;
     cursor: pointer;
 }
-
 </style>

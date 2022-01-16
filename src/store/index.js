@@ -18,10 +18,10 @@ export default createStore({
             else { return null }
         },
         cartItems: state => {
-           return state.cart
+            return state.cart
         },
-        cartTotal: state =>{
-            return state.cart.reduce((a,b) => a + (b.price * b.quantity), 0)
+        cartTotal: state => {
+            return state.cart.reduce((a, b) => a + (b.price * b.quantity), 0)
         }
     },
     mutations: {
@@ -31,7 +31,7 @@ export default createStore({
             if (item) {
                 item.quantity++
             } else {
-                state.cart.push({...product, quantity: 1})
+                state.cart.push({ ...product, quantity: 1 })
             }
 
             updateLocalStorage(state.cart)
@@ -39,10 +39,10 @@ export default createStore({
         removeFromCart(state, product) {
             let item = state.cart.find(i => i.id === product.id)
 
-            if(item) {
-                if(item.quantity >1){
+            if (item) {
+                if (item.quantity > 1) {
                     item.quantity--
-                }else{
+                } else {
                     state.cart = state.cart.filter(i => i.id !== product.id)
                 }
             }
@@ -50,7 +50,7 @@ export default createStore({
         },
         updateCartFromLocalStorage(state) {
             const cart = localStorage.getItem('cart')
-            if(cart) {
+            if (cart) {
                 state.cart = JSON.parse(cart)
             }
         }
