@@ -19,7 +19,7 @@ export default {
     },
     data() {
         return {
-            showEmptyCart: false,
+            showEmptyCart: false
         }
     },
     computed: {
